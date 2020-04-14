@@ -23,21 +23,6 @@ export default class App extends Component<{}> {
 
   openStorePage = async () =>  {
     let url = "ms-windows-store://pdp/?ProductId=9MWXC73GG352";
-    // let url = "http://www.microsoft.com";
-    //     Linking.canOpenURL(url)
-    //       .then((supported) => {
-    //         window.alert("Inside function: " + supported);
-    //         console.log('Inside', supported, url);
-    //         if (supported) {
-    //           window.alert("open url");
-    //           Linking.openURL(url)
-    //             .then((res) => console.log('Response', res))
-    //             .catch((ex) => window.alert('Ex '+ ex));
-    //         }
-    //         else {
-    //           window.alert("Not supported");
-    //         }
-    //       });
       try {
         var isOpen = await LauncherManager.openUrl( { url: url});
         window.alert(isOpen);
