@@ -21,17 +21,16 @@ const instructions =
 
 export default class App extends Component<{}> {
 
-  openStorePage = async () =>  {
-    let url = "ms-windows-store://pdp/?ProductId=9MWXC73GG352";
-      try {
-        var isOpen = await LauncherManager.openUrl( { url: url});
-        window.alert(isOpen);
-        console.log(isOpen);
-      }
-      catch (e) {
-        console.error(e);
-      }
+openStorePage = async () =>  {
+  let url = "ms-windows-store://pdp/?ProductId=9MWXC73GG352";
+    try {
+      var isOpen = await LauncherManager.openUrl( { url: url});
+      console.log(isOpen);
     }
+    catch (e) {
+      console.error(e);
+    }
+  }
 
   render() {
     return (
