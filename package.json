@@ -1,0 +1,26 @@
+{
+  "name": "ReactLegacy",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.10",
+    "react-native-windows": "0.59.0-legacy.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "babel-jest": "^25.2.4",
+    "jest": "^25.2.4",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.8.3",
+    "rnpm-plugin-windows": "^0.6.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
